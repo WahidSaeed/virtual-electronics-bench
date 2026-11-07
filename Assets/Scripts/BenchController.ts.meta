@@ -1,0 +1,127 @@
+- !<AssetImportMetadata/29de72bd-d053-42d7-b58c-be783aeb6f3c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a8bc5f7a-3065-4526-83d8-0258ed544bc2
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a8bc5f7a-3065-4526-83d8-0258ed544bc2
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 89e4a0b9-0a16-4833-84b0-14ff2494aafa
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/89e4a0b9-0a16-4833-84b0-14ff2494aafa>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: a32624a5-dd5b-48c0-b824-c6772ba9979c
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    baseMaterial: false
+    batteryRoot: false
+    breadboardRoot: false
+    closeUpTracker: false
+    closeUpTrackerMirrored: false
+    debugColliders: false
+    demoPrebuild: false
+    deskStandIn: false
+    glowMaterial: false
+    jumperWireCount: false
+    lockAfterFirstScan: false
+    markerJumpCm: false
+    markerSmoothing: false
+    markerTracker: false
+    markerTrackerMirrored: false
+    partsRoot: false
+    showDeskStandIn: false
+    snapMarginCm: false
+    trayRoot: false
+    webcamDropCm: false
+    webcamGapCm: false
+    webcamMode: false
+    webcamTiltDeg: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - deskStandIn: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      breadboardRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      batteryRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      trayRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      partsRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      baseMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      glowMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      showDeskStandIn: true
+      jumperWireCount: !<float> 4.000000
+      snapMarginCm: !<float> 2.000000
+      webcamMode: false
+      webcamGapCm: !<float> 4.000000
+      webcamTiltDeg: !<float> 35.000000
+      webcamDropCm: !<float> 8.000000
+      markerTracker: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      markerTrackerMirrored: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      closeUpTracker: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      closeUpTrackerMirrored: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      lockAfterFirstScan: false
+      markerSmoothing: !<float> 10.000000
+      markerJumpCm: !<float> 3.000000
+      demoPrebuild: false
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"Virtual Electronics Bench"}'
+    - '// @ui {"widget":"group_start", "label":"Scene roots"}'
+    - "// @input SceneObject deskStandIn {\"hint\":\"Virtual desk at real desk height — a stand-in for the user's real desk in the preview\"}"
+    - '// @input SceneObject breadboardRoot {"hint":"Breadboard root: board center, on the desk surface"}'
+    - '// @input SceneObject batteryRoot {"hint":"Battery pack root, on the desk surface"}'
+    - '// @input SceneObject trayRoot {"hint":"Parts tray root, on the desk surface"}'
+    - '// @input SceneObject partsRoot {"hint":"Parent for the grabbable parts and wires"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Materials"}'
+    - '// @input Asset.Material baseMaterial {"hint":"Lit material cloned for every solid color"}'
+    - '// @input Asset.Material glowMaterial {"hint":"Unlit material cloned for additive glows and highlights"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - "// @input bool showDeskStandIn = true {\"hint\":\"Show the virtual desk. Turn off on real glasses, where the user's own desk is used\"}"
+    - '// @input float jumperWireCount = 4 {"hint":"Jumper wires in the tray", "widget":"slider", "min":1, "max":4, "step":1}'
+    - "// @input float snapMarginCm = 2 {\"hint\":\"How far past the board's edge (cm) a drop still snaps into the board\"}"
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Webcam preview"}'
+    - '// @input bool webcamMode {"hint":"For a fixed-view preview with no head tracking (webcam input): hides the virtual desk, moves the battery and tray closer, tilts the bench toward you and places it straight ahead so it all fits in view. Leave off on real glasses and in Interactive Preview"}'
+    - '// @input float webcamGapCm = 4 {"hint":"Gap (cm) between the board and the battery leads / tray in webcam mode"}'
+    - '// @input float webcamTiltDeg = 35 {"hint":"How far (degrees) the bench tilts toward you in webcam mode"}'
+    - '// @input float webcamDropCm = 8 {"hint":"How far below eye level (cm) the bench sits in webcam mode"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Desk marker"}'
+    - "// @input Component.MarkerTrackingComponent markerTracker {\"hint\":\"Optional: image marker lying on the real desk. Once the camera finds it, the bench lies flat on it with the board centered on the image and its 'toward you' edge toward the user\"}"
+    - '// @input Component.MarkerTrackingComponent markerTrackerMirrored {"hint":"Optional: the same marker with a mirrored image, for webcams (e.g. iPhone Continuity Camera) that send a mirrored picture"}'
+    - '// @input Component.MarkerTrackingComponent closeUpTracker {"hint":"Optional: a small card lying anywhere near the board. While the desk marker and the card are both in view the bench learns where it sits relative to the card, then follows the card alone in close-ups"}'
+    - '// @input Component.MarkerTrackingComponent closeUpTrackerMirrored {"hint":"Optional: the close-up card with a mirrored image, for mirrored webcams"}'
+    - '// @input bool lockAfterFirstScan {"hint":"Place the bench from the first steady marker sighting, then stop following markers. Use on glasses (which track their own movement) or with the webcam on a stand; with a hand-held webcam the bench would slide off the marker"}'
+    - '// @input float markerSmoothing = 10 {"hint":"How quickly the bench follows the marker. Lower is steadier but lags more when the phone moves", "widget":"slider", "min":2, "max":30, "step":1}'
+    - '// @input float markerJumpCm = 3 {"hint":"A marker jump bigger than this (cm) in one frame is treated as a tracking glitch unless it persists"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Demo"}'
+    - '// @input bool demoPrebuild {"hint":"Start with the circuit already built (battery leads, 220 Ω resistor, both wires) and only the LED left in the tray, so a demo ends on the one placement that lights it"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Debug"}'
+    - "// @input bool debugColliders {\"hint\":\"Draw every part's grab zone\"}"
+    - '// @ui {"widget":"group_end"}'
