@@ -98,8 +98,9 @@ Assets/
 ├── Textures/                   Desk marker images (normal and mirrored)
 └── Render/                     Camera texture, render target, environment map
 Packages/                       Spectacles Interaction Kit, Spectacles UI Kit, LEAF, Icons, Motion
+devpost/
+└── design-brief.md             The design brief from the Devpost Learn skill pack (plan-lens)
 docs/
-├── design-brief.md             The original design brief and done criteria
 ├── BenchMarker_print_A4.pdf    Printable desk marker
 └── images/                     Screenshots used in this README
 ```
