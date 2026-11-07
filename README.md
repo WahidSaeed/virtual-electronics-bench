@@ -2,8 +2,6 @@
 
 **A real-size electronics practice bench for Snap Spectacles.** Follow a breadboard tutorial on your real laptop while you build the circuit with your hands on a virtual breadboard lying on your real desk — no parts to buy, nothing to burn out.
 
-![The LED glowing on the virtual breadboard, placed on a real desk next to a laptop](docs/images/led-glowing-on-desk.png)
-
 Built for the SPECS hackathon with Lens Studio 5.23, TypeScript, the Spectacles Interaction Kit (SIK) and LEAF integration tests.
 
 ---
